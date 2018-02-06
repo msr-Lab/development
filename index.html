@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
 	<title>Homepage</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+	<link rel="stylesheet" href="css/hover.css">
+
 	<link rel="stylesheet" href="css/style.css">
 </head> 
-<body>
+<body data-spy="scroll">
 <header>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -17,25 +25,98 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">MSR LAB</a>
+      <a class="navbar-brand" href="index.html"><span>MSR LAB</span></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Home</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="#">Work</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">About</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+  </div><!-- /.container -->
 </nav>
 </header>
-	
+
+<section id="home">
+  <div class="bg-color">
+    <div class="col-md-2">
+      <div class="left-content">
+        <h3>Left Content Fixed</h3>
+        <ul>
+        <li><a href="#">New</a></li>
+        <li><a href="#">old</a></li>
+        <li><a href="#">Good</a></li>
+        <li><a href="#">bad</a></li>
+        <li><a href="#">worst</a></li>
+        <li><a href="#">best</a></li>
+        <li><a href="#">better</a></li>
+        <li><a href="#">average</a></li>
+        </ul>
+      </div>
+    </div>
+      <div class="col-md-8">
+        <div class="conent conent-border">
+        <div class="welcome-text text-center">
+          <h3>Welcome to <span class="bold">MSN LAB</span></h3>
+          <p>We are <strong>DEVELOPER</strong>.</p>
+          <a href="#home"><i class="fa fa-angle-down" style="font-size: 48px;"></i></a>
+        </div>
+        <div class="blog text-center bg1">
+          <h3>It is my first <span class="bold"> blog</span></h3>
+        </div>
+        <div class="blog text-center bg1">
+          <h3>Another <span class="bold"> blog or content</span></h3>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-2">
+      <div class="right-content">
+        <h3>Right Content Scroll</h3>
+        <ul>
+          <li><a href="#">Gallery</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      </div>
+  </div>
+  </div>
+</section>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+(function ($) {
+    //jQuery to collapse the navbar on scroll
+    $(window).scroll(function() {
+        if ($(".navbar-default").offset().top > 50) {
+            $(".navbar-fixed-top").addClass("top-nav-collapse");
+        } else {
+            $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    });
+    
+})(jQuery);
+
+</script>
 </body>
 </html>
