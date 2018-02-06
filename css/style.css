@@ -1,1 +1,150 @@
 
+
+
+body
+{
+    background:rgb(233,235,238);
+    padding-top: 100px; 
+}
+.navbar-default
+{
+	background:#fff;
+	padding:5px 0px;
+	transition:all 0.8s ease-out;
+}
+.navbar-default .navbar-header
+{
+    padding: 5px 0px;
+    margin: 0px;
+}
+.navbar-default .navbar-brand span
+{
+	color:#44b272;
+}
+.navbar-default .navbar-header a
+{
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover 
+{
+    color:#fff;
+    background-color: transparent;
+}
+.nav li
+{
+	display:block;
+}
+.navbar-default .navbar-nav li a 
+{
+    color:#000;
+    text-transform: uppercase;
+	font-weight:600;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 0.5px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover 
+{
+    color:#44b272;
+	background:transparent;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover 
+{
+    color:green;
+    background-color: transparent;
+}
+#home
+{
+    background-image: url("");
+    background-size: cover;
+    background-position:top; 
+}
+.content-border
+{
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    height: auto;
+    padding: 0px;
+}
+.welcome-text
+{
+    padding: 200px 0px;
+    color: black;
+    background: #fff;
+}
+.welcome-text h3 
+{
+    font-size: 48px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+.welcome-text h3 span.bold 
+{
+    font-weight: 800;
+}
+.welcome-text p 
+{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+.bg1
+{
+    margin: 50px 0px 0px 0px;
+}
+.blog
+{
+    padding: 100px 0px;
+    background:white;
+}
+.left-content
+{
+    position: fixed;
+}
+ul li
+{
+    display:block;
+    padding:5px;
+}
+ul li a 
+{
+    color:#44b272;
+    text-transform: uppercase;
+    font-weight:600;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 0.5px;
+}
+.top-nav-collapse
+{
+    color:#6f6f6f !important;
+    margin:0px;
+    padding:0px;
+}
+.top-nav-collapse .navbar-brand
+{
+    color:#222 !important;
+    padding:15px 0px;
+}
+.navbar-default.top-nav-collapse 
+{
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+.navbar-default.top-nav-collapse ul.nav.navbar-nav li.active a 
+{
+    color: #44b272;
+}
+.navbar-default.top-nav-collapse ul.navbar-nav li a 
+{
+    color: #666;
+    padding:10px 15px;
+}
